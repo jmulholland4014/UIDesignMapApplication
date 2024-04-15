@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learning Geography</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .leaderboard {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Learning Geography!</h2>
+  
+  <div class="leaderboard">
+    <h3>Leaderboard</h3>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Time taken for 100%</th>
+      </tr>
+      <tr>
+        <td>Jim Halpert</td>
+        <td>197 seconds</td>
+      </tr>
+      <tr>
+        <td>Dwight Schrute</td>
+        <td>8738 seconds</td>
+      </tr>
+    </table>
+  </div>
+  
+  <button class="button" id = "learn" onclick = "learn()">Learn</button>
+  <button class="button" onclick = "quiz()">Compete</button>
+</div>
+<script src="/static/home.js"></script>
+</body>
+</html>

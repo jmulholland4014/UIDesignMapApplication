@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Score Page</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  .score-container {
+    text-align: center;
+  }
+  .score-value {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  .homepage-button {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="score-container">
+  <h1>Score</h1>
+  <div class="score-value">You scored a XX%!</div>
+  <div class = "score-value">Given your time, <br> you place 35th on the leaderboard.</div>
+  <button class="homepage-button" onclick = "homePage()">Homepage</button>
+</div>
+<script src = "/static/home.js"></script>
+</body>
+</html>

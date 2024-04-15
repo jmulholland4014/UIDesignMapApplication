@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caribbean Islands</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    background-color: #ffd700; /* Assuming a gold color for the header */
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .island-names {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #e0e0e0; /* light grey */
+  }
+  .island-name {
+    background-color: #ffffff; /* white */
+    border: 1px solid #000000; /* black */
+    padding: 10px;
+    cursor: pointer;
+  }
+  .map-container {
+    text-align: center;
+    background-color: #ffffff; /* white */
+    padding: 20px;
+  }
+  .map-container img {
+    width: 80%;
+    height: auto;
+  }
+  .next-button {
+    background-color: #8d918d; /* Grey */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 100px;
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  Caribbean Island Region 1
+</div>
+
+<div class="island-names">
+  <div class="island-name">Island Name</div>
+  <div class="island-name">Island Name</div>
+  <div class="island-name">Island Name</div>
+  <div class="island-name">Island Name</div>
+  <div class="island-name">Island Name</div>
+  <div class="island-name">Island Name</div>
+  <div class="island-name">Island Name</div>
+  <div class="island-name">Island Name</div>
+  <div class="island-name">Island Name</div>
+  <div class="island-name">Island Name</div>
+  <div class="island-name">Island Name</div>
+  <div class="island-name">Island Name</div>
+</div>
+
+<div class="map-container">
+  <img src="" alt="Caribbean Island Region Map">
+</div>
+
+<div style="text-align: center;">
+  <button class="next-button" onclick = "learn()" id = "nextBtn">Next</button>
+  <button class ="five-wrong" onclick = "fiveWrong()" id = "fiveWrong">Five Wrong</button>
+</div>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>You appear to be struggling a little bit, attached below is the solution, try to memorize it as much as you can and keep trying!</p>
+      <img src="your-solution-image.png" alt="Solution Image" style="max-width:100%;height:auto;">
+    </div>
+</div>
+<script src = "/static/learn.js"></script>
+</body>
+</html>
