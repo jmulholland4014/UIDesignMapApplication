@@ -36,12 +36,13 @@
     cursor: pointer;
   }
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 
 <div class="quiz-container">
-  <h2>Name this island <span class="timer">0:25</span></h2>
-  <img src="island.png" alt="Island" class="island-image">
+  <h2>Name this island <span class="timer" id="timer">0:00</span></h2>
+  <img src="" alt="Island" class="island-image" id = "islandImg">
   <input type="text" placeholder="Enter island name here" style="width: 100%;">
   <button class="next-button" id = "nextBtn" onclick = "quiz()">Next</button>
 </div>
